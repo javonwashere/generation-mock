@@ -2,17 +2,46 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.2",
-  "hash": "6cec49a6a0c7d1ef942e",
+  "hash": "91a071c3835e1f4a7376",
   "publicPath": "/static/",
-  "outputPath": "/Users/javonmcgilberry/Documents/gen-mock/build/static",
+  "outputPath": "/Users/javonmcgilberry/Documents/gen-mock-v2/generation-mock/build/static",
   "assetsByChunkName": {
-    "gen-mock": "gen-mock.module.js",
+    "gen-mock": [
+      "gen-mock.module.js",
+      "gen-mock.1a1a83fc07d998b0d9b9.hot-update.js"
+    ],
     "list": "list.module.js"
   },
   "assets": [
     {
+      "name": "1a1a83fc07d998b0d9b9.hot-update.json",
+      "size": 50,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "gen-mock.1a1a83fc07d998b0d9b9.hot-update.js",
+      "size": 67789,
+      "chunks": [
+        "gen-mock"
+      ],
+      "chunkNames": [
+        "gen-mock"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
       "name": "gen-mock.module.js",
-      "size": 5773779,
+      "size": 5797415,
       "chunks": [
         "gen-mock"
       ],
@@ -23,8 +52,24 @@
       "emitted": false
     },
     {
+      "name": "images/gm_logo.png",
+      "size": 31567,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/gm_text_logo.png",
+      "size": 12670,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
       "name": "list.module.js",
-      "size": 116350,
+      "size": 116818,
       "chunks": [
         "list"
       ],
@@ -42,7 +87,8 @@
         "gen-mock"
       ],
       "assets": [
-        "gen-mock.module.js"
+        "gen-mock.module.js",
+        "gen-mock.1a1a83fc07d998b0d9b9.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -54,7 +100,8 @@
         "gen-mock"
       ],
       "assets": [
-        "gen-mock.module.js"
+        "gen-mock.module.js",
+        "gen-mock.1a1a83fc07d998b0d9b9.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
