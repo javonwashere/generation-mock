@@ -16,25 +16,33 @@ const settings = {
         "theme": {
           "menu": [
             [
-              "Home",
-              "/"
+              "Listings",
+              "/category/property-listings"
             ],
             [
-              "Nature",
-              "/category/nature/"
+              "Blog",
+              "/category/blog"
             ],
-            [
-              "Travel",
-              "/category/travel/"
-            ],
-            [
-              "Japan",
-              "/tag/japan/"
-            ],
-            [
-              "About Us",
-              "/about-us/"
-            ]
+            // [
+            //   "Home",
+            //   "/"
+            // ],
+            // [
+            //   "Nature",
+            //   "/category/nature/"
+            // ],
+            // [
+            //   "Travel",
+            //   "/category/travel/"
+            // ],
+            // [
+            //   "Japan",
+            //   "/tag/japan/"
+            // ],
+            // [
+            //   "About Us",
+            //   "/about-us/"
+            // ]
           ],
           "featured": {
             "showOnList": true,

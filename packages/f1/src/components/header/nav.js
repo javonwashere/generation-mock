@@ -7,7 +7,7 @@ import Link from "../link";
  *
  * It renders the navigation links
  */
-const Nav = ({ state }) => (
+const Nav = ({ state, gmLogo }) => (
   <NavContainer>
     {state.theme.menu.map(([name, link]) => {
       // Check if the link matched the current page url
@@ -21,10 +21,26 @@ const Nav = ({ state }) => (
         </NavItem>
       );
     })}
+    <StyledLink link="/">
+      <LogoContainer src={gmLogo} />
+    </StyledLink>
   </NavContainer>
 );
 
 export default connect(Nav);
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: var(--brand);
+  transition: all 0.3s ease;
+  &:hover {
+    color: var(--black);
+  }
+`;
+
+const LogoContainer = styled.img`
+  height: 20px;
+`;
 
 const NavContainer = styled.nav`
   list-style: none;
@@ -51,14 +67,14 @@ const NavItem = styled.div`
   & > a {
     display: inline-block;
     line-height: 2em;
-    color:var(--black);
+    color: var(--black);
     transition: all 0.3s ease;
     /* Use for semantic approach to style the current link */
     &[aria-current="page"] {
-      color:var(--brand);
+      color: var(--brand);
     }
     &:hover {
-      color:var(--brand);
+      color: var(--brand);
     }
   }
 

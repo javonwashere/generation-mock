@@ -3,7 +3,7 @@ import { styled, connect, Global } from "frontity";
 import { CloseIcon, HamburgerIcon } from "./menu-icon";
 import MenuModal from "./menu-modal";
 
-function MobileMenu({ state, actions }) {
+function MobileMenu({ state, actions, gmLogo }) {
   const { isMobileMenuOpen } = state.theme;
   return (
     <>
@@ -16,7 +16,8 @@ function MobileMenu({ state, actions }) {
             <CloseIcon color="black" size="20px" />
           </>
         ) : (
-          <HamburgerIcon color="black" size="20px" />
+          <LogoContainer src={gmLogo} />
+          // <HamburgerIcon color="black" size="20px" />
         )}
       </MenuToggle>
       {/* If the menu is open, render the menu modal */}
@@ -24,6 +25,10 @@ function MobileMenu({ state, actions }) {
     </>
   );
 }
+
+const LogoContainer = styled.img`
+  height: 20px;
+`;
 
 const MenuToggle = styled.button`
   position: absolute;
