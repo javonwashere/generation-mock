@@ -1,0 +1,81 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.44.2",
+  "hash": "6cec49a6a0c7d1ef942e",
+  "publicPath": "/static/",
+  "outputPath": "/Users/javonmcgilberry/Documents/gen-mock/build/static",
+  "assetsByChunkName": {
+    "gen-mock": "gen-mock.module.js",
+    "list": "list.module.js"
+  },
+  "assets": [
+    {
+      "name": "gen-mock.module.js",
+      "size": 5773779,
+      "chunks": [
+        "gen-mock"
+      ],
+      "chunkNames": [
+        "gen-mock"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "list.module.js",
+      "size": 116350,
+      "chunks": [
+        "list"
+      ],
+      "chunkNames": [
+        "list"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "gen-mock": {
+      "chunks": [
+        "gen-mock"
+      ],
+      "assets": [
+        "gen-mock.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "gen-mock": {
+      "chunks": [
+        "gen-mock"
+      ],
+      "assets": [
+        "gen-mock.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "list": {
+      "chunks": [
+        "list"
+      ],
+      "assets": [
+        "list.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": []
+}
