@@ -2,19 +2,19 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.2",
-  "hash": "91a071c3835e1f4a7376",
+  "hash": "788ffa24380121c9f8ed",
   "publicPath": "/static/",
   "outputPath": "/Users/javonmcgilberry/Documents/gen-mock-v2/generation-mock/build/static",
   "assetsByChunkName": {
     "gen-mock": [
       "gen-mock.module.js",
-      "gen-mock.1a1a83fc07d998b0d9b9.hot-update.js"
+      "gen-mock.51ad4c7dc1fe1aa73eca.hot-update.js"
     ],
     "list": "list.module.js"
   },
   "assets": [
     {
-      "name": "1a1a83fc07d998b0d9b9.hot-update.json",
+      "name": "51ad4c7dc1fe1aa73eca.hot-update.json",
       "size": 50,
       "chunks": [],
       "chunkNames": [],
@@ -25,8 +25,104 @@
       "emitted": false
     },
     {
-      "name": "gen-mock.1a1a83fc07d998b0d9b9.hot-update.js",
-      "size": 67789,
+      "name": "fonts/GTSectraDisplay-Bold.eot",
+      "size": 270780,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/GTSectraDisplay-Bold.ttf",
+      "size": 270560,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/GTSectraDisplay-Bold.woff",
+      "size": 106044,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/NHaasGroteskTXPro-55Rg.eot",
+      "size": 120666,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/NHaasGroteskTXPro-55Rg.ttf",
+      "size": 120412,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/NHaasGroteskTXPro-55Rg.woff",
+      "size": 49952,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/NHaasGroteskTXPro-65Md.eot",
+      "size": 121506,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/NHaasGroteskTXPro-65Md.ttf",
+      "size": 121244,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/NHaasGroteskTXPro-65Md.woff",
+      "size": 50800,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/NHaasGroteskTXPro-75Bd.eot",
+      "size": 119846,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/NHaasGroteskTXPro-75Bd.ttf",
+      "size": 119600,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fonts/NHaasGroteskTXPro-75Bd.woff",
+      "size": 49344,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "gen-mock.51ad4c7dc1fe1aa73eca.hot-update.js",
+      "size": 147365,
       "chunks": [
         "gen-mock"
       ],
@@ -41,7 +137,7 @@
     },
     {
       "name": "gen-mock.module.js",
-      "size": 5797415,
+      "size": 6437829,
       "chunks": [
         "gen-mock"
       ],
@@ -69,7 +165,7 @@
     },
     {
       "name": "list.module.js",
-      "size": 116818,
+      "size": 234470,
       "chunks": [
         "list"
       ],
@@ -88,7 +184,7 @@
       ],
       "assets": [
         "gen-mock.module.js",
-        "gen-mock.1a1a83fc07d998b0d9b9.hot-update.js"
+        "gen-mock.51ad4c7dc1fe1aa73eca.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -101,7 +197,7 @@
       ],
       "assets": [
         "gen-mock.module.js",
-        "gen-mock.1a1a83fc07d998b0d9b9.hot-update.js"
+        "gen-mock.51ad4c7dc1fe1aa73eca.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

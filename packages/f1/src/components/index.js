@@ -1,9 +1,11 @@
 import React from "react";
 import { Global, css, connect, styled, Head } from "frontity";
+import GlobalFonts from "../fonts/fonts";
 import Switch from "@frontity/components/switch";
 import Header from "./header/header";
 import Footer from "./footer/footer";
 import List from "./list";
+import Home from "./home";
 import Post from "./post";
 import Page from "./pages/page";
 import HomePage from "./pages/homepage";
@@ -27,6 +29,7 @@ const Theme = ({ state }) => {
     <>
       {/* Add some metatags to the <head> of the HTML. */}
       <Title />
+      <GlobalFonts />
       <Head>
         <meta name="description" content={state.frontity.description} />
         <html lang="en" />
@@ -49,8 +52,8 @@ const Theme = ({ state }) => {
       <Main>
         <Switch>
           <Loading when={data.isFetching} />
+          <HomePage when={data.isHome} />
           <List when={data.isArchive} />
-          <HomePage when={data.isHome} /> 
           <Jobs when={data.isAwsmJobOpenings} />
           <Page when={data.isPage} />
           <Post when={data.isPostType} />
@@ -76,8 +79,9 @@ const globalStyles = css`
   body {
     margin: 0;
     color:var(--bodycolor);
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-      "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    // font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    //   "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "NeueHaasGroteskText Rg", Helvetica, Arial, sans-serif;
     font-feature-settings: "kern";
     -webkit-font-smoothing: antialiased;
   }
@@ -113,6 +117,116 @@ const globalStyles = css`
     @media (min-width: 992px) {
       padding: 50px 0;
     }
+  }
+
+  @keyframes zoomInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+      transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+      -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    60% {
+      opacity: 1;
+      -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+      transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+      -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+      animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: 320px) {
+    html {
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 640px) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .animate__slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
   }
 `;
 
