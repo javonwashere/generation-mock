@@ -2,19 +2,19 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.2",
-  "hash": "788ffa24380121c9f8ed",
+  "hash": "43930fc7c0050f81a867",
   "publicPath": "/static/",
   "outputPath": "/Users/javonmcgilberry/Documents/gen-mock-v2/generation-mock/build/static",
   "assetsByChunkName": {
     "gen-mock": [
       "gen-mock.module.js",
-      "gen-mock.51ad4c7dc1fe1aa73eca.hot-update.js"
+      "gen-mock.3e17719524e4c9668c41.hot-update.js"
     ],
     "list": "list.module.js"
   },
   "assets": [
     {
-      "name": "51ad4c7dc1fe1aa73eca.hot-update.json",
+      "name": "3e17719524e4c9668c41.hot-update.json",
       "size": 50,
       "chunks": [],
       "chunkNames": [],
@@ -121,8 +121,8 @@
       "emitted": false
     },
     {
-      "name": "gen-mock.51ad4c7dc1fe1aa73eca.hot-update.js",
-      "size": 147365,
+      "name": "gen-mock.3e17719524e4c9668c41.hot-update.js",
+      "size": 47787,
       "chunks": [
         "gen-mock"
       ],
@@ -137,7 +137,7 @@
     },
     {
       "name": "gen-mock.module.js",
-      "size": 6437829,
+      "size": 6505050,
       "chunks": [
         "gen-mock"
       ],
@@ -164,8 +164,16 @@
       "emitted": false
     },
     {
+      "name": "images/villa_lewaro.jpg",
+      "size": 187033,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
       "name": "list.module.js",
-      "size": 234470,
+      "size": 117580,
       "chunks": [
         "list"
       ],
@@ -184,7 +192,7 @@
       ],
       "assets": [
         "gen-mock.module.js",
-        "gen-mock.51ad4c7dc1fe1aa73eca.hot-update.js"
+        "gen-mock.3e17719524e4c9668c41.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -197,7 +205,7 @@
       ],
       "assets": [
         "gen-mock.module.js",
-        "gen-mock.51ad4c7dc1fe1aa73eca.hot-update.js"
+        "gen-mock.3e17719524e4c9668c41.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

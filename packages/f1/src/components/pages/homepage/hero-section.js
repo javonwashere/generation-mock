@@ -48,7 +48,7 @@ const HeroSection = ({ state, actions, panels, libraries }) => {
     return introData[0] ? introData[0] : "";
   };
 
-  if (indexData.isReady) {
+  // if (indexData.isReady) {
     const posts = indexData.items.map(({ type, id }) => state.source[type][id]);
     let retrieveData = dataRetriever(posts);
 
@@ -85,8 +85,8 @@ const HeroSection = ({ state, actions, panels, libraries }) => {
         </PanelStyling>
       </Panels>
     );
-  }
-  return null;
+  // }
+  // return null;
 };
 
 const ImgPanel = ({ panelDetails, isBottomPanel, Html2React, state }) => {
