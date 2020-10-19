@@ -48,7 +48,7 @@ let QuoteWrapper = styled.div`
     color: rgba(222, 111, 58);
   }
 
-  h4 {
+  h4, p {
     font-family: "NeueHaasGroteskText Md";
     text-align: center;
     color: rgba(222, 111, 58);

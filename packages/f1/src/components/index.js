@@ -37,10 +37,10 @@ const Theme = ({ state }) => {
 
       {/* Add some global styles for the whole site, like body or a's. 
       Not classes here because we use CSS-in-JS. Only global HTML tags. */}
-      <Global styles={globalStyles} />
       {/* <Global styles={css(BootstrapCss)} /> */}
       <Global styles={css(gutenbergStyle)} />
       <Global styles={css(gutenbergTheme)} />
+      <Global styles={globalStyles} />
 
       {/* Add the header of the site. */}
       <HeadContainer>
@@ -101,8 +101,8 @@ const globalStyles = css`
     color: var(--black);
   }
   p {
-    line-height: 24px;
-    font-size: 18px;
+    // line-height: 24px;
+    // font-size: 18px;
   }
   #root {
     display: flex;
@@ -189,25 +189,25 @@ const globalStyles = css`
 
   @media (min-width: 320px) {
     html {
-      font-size: 14px !important;
+      font-size: 14px;
     }
   }
 
   @media (min-width: 640px) {
     html {
-      font-size: 16px !important;
+      font-size: 16px;
     }
   }
 
   @media (min-width: 768px) {
     html {
-      font-size: 16px !important;
+      font-size: 16px;
     }
   }
 
   @media (min-width: 1024px) {
     html {
-      font-size: 16px !important;
+      font-size: 16px;
     }
   }
 
