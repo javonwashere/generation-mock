@@ -5,6 +5,7 @@ import List from "../list";
 import HeroSection from "./homepage/hero-section";
 import QuoteSection from "./homepage/quote-section";
 import GridSection from "./homepage/grid-section";
+import FacetsSection from "./homepage/facets-section";
 
 const Homepage = ({ state, actions, libraries }) => {
   // Get information about the current URL.
@@ -25,35 +26,15 @@ const Homepage = ({ state, actions, libraries }) => {
     List.preload();
   }, []);
 
-    const dataRetriever = (postsData) => (postTitle) => {
+  const dataRetriever = (postsData) => (postTitle) => {
     const introData = postsData.filter(
       (post) =>
         post.title.rendered.includes(postTitle) ||
         post.title.rendered.includes(postTitle.toUpperCase()) ||
         post.title.rendered.includes(postTitle.toLowerCase())
     );
-    return introData[0] ? introData[0] : "" ;
+    return introData[0] ? introData[0] : "";
   };
-
-  // if(indexData.isReady) {
-  //   const posts = indexData.items.map(
-  //     ({ type, id }) => state.source[type][id]
-  //   );
-  //   let retrieveData = dataRetriever(posts);
-
-  //   console.log("ALL POSTS", posts)
-
-  //   const panel1 = retrieveData("HeroText");
-  //   const panel2 = retrieveData("HeroImage1");
-  //   const panel3 = retrieveData("HeroImage2");
-
-  //   console.log(panel1);
-  //   console.log(panel2);
-  //   console.log(panel3);
-
-  //   const allPanels = {panel1, panel2, panel3};
-
-  console.log("fdasfdsafdsaf", indexData);
 
   return (
     <HomeContainer>
@@ -61,9 +42,10 @@ const Homepage = ({ state, actions, libraries }) => {
         <React.Fragment>
           <HeroSection />
           <Container>
-          <QuoteSection dataRetriever={dataRetriever}/>
+            <QuoteSection dataRetriever={dataRetriever} />
           </Container>
           <GridSection dataRetriever={dataRetriever} />
+            <FacetsSection dataRetriever={dataRetriever} />
         </React.Fragment>
       )}
     </HomeContainer>

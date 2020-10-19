@@ -61,7 +61,7 @@ const Theme = ({ state }) => {
         </Switch>
       </Main>
       <FooterContainer>
-        <Footer />
+        {/* <Footer /> */}
       </FooterContainer>
     </>
   );
@@ -241,10 +241,11 @@ const HeadContainer = styled.div`
   max-width: 1200px;
   justify-content: space-between;
   margin: 0 auto;
-  padding-top: 2.75rem;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-bottom: 6.25rem;
+  // // padding-top: 2.75rem;
+  // padding-right: 15px;
+  // padding-left: 15px;
+  // // padding-bottom: 6.25rem;
+  padding: 2vh 2vw;
 `;
 const FooterContainer = styled.div`
   display: flex;
