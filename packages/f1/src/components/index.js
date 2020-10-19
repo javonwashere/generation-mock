@@ -38,7 +38,7 @@ const Theme = ({ state }) => {
 
       {/* Add some global styles for the whole site, like body or a's. 
       Not classes here because we use CSS-in-JS. Only global HTML tags. */}
-      <Global styles={css(BootstrapCss)} />
+      {/* <Global styles={css(BootstrapCss)} /> */}
       <Global styles={css(coblocks)} />
       <Global styles={css(gutenbergStyle)} />
       <Global styles={css(gutenbergTheme)} />
@@ -80,7 +80,7 @@ const globalStyles = css`
   html {
     animation: zoomInDown ease 1.5s;
   }
-  
+
   body {
     margin: 0;
     color: var(--bodycolor);

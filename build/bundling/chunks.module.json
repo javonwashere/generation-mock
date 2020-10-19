@@ -2,19 +2,19 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.2",
-  "hash": "c67b440b3db5c48d77bc",
+  "hash": "2738cfe7a1f8478d7b2c",
   "publicPath": "/static/",
   "outputPath": "/Users/javonmcgilberry/Documents/gen-mock-v2/generation-mock/build/static",
   "assetsByChunkName": {
     "gen-mock": [
       "gen-mock.module.js",
-      "gen-mock.e3cb59555f9430a8bb14.hot-update.js"
+      "gen-mock.c67b440b3db5c48d77bc.hot-update.js"
     ],
     "list": "list.module.js"
   },
   "assets": [
     {
-      "name": "e3cb59555f9430a8bb14.hot-update.json",
+      "name": "c67b440b3db5c48d77bc.hot-update.json",
       "size": 50,
       "chunks": [],
       "chunkNames": [],
@@ -121,8 +121,8 @@
       "emitted": false
     },
     {
-      "name": "gen-mock.e3cb59555f9430a8bb14.hot-update.js",
-      "size": 91046,
+      "name": "gen-mock.c67b440b3db5c48d77bc.hot-update.js",
+      "size": 82065,
       "chunks": [
         "gen-mock"
       ],
@@ -137,7 +137,7 @@
     },
     {
       "name": "gen-mock.module.js",
-      "size": 7655988,
+      "size": 7647007,
       "chunks": [
         "gen-mock"
       ],
@@ -264,7 +264,7 @@
       ],
       "assets": [
         "gen-mock.module.js",
-        "gen-mock.e3cb59555f9430a8bb14.hot-update.js"
+        "gen-mock.c67b440b3db5c48d77bc.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -277,7 +277,7 @@
       ],
       "assets": [
         "gen-mock.module.js",
-        "gen-mock.e3cb59555f9430a8bb14.hot-update.js"
+        "gen-mock.c67b440b3db5c48d77bc.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
