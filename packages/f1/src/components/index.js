@@ -250,7 +250,7 @@ const HeadContainer = styled.div`
   // padding-right: 15px;
   // padding-left: 15px;
   // // padding-bottom: 6.25rem;
-  padding: 2vh 2vw;
+  padding: 3vh 2vw;
 `;
 const FooterContainer = styled.div`
   display: flex;
