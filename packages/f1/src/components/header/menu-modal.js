@@ -45,6 +45,7 @@ const MenuContent = styled.div`
 
 const MenuLink = styled(Link)`
   width: 100%;
+  font-family: 'GTSectraDisplay';
   outline: 0;
   font-size: 20px;
   text-align: center;

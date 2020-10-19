@@ -1,5 +1,6 @@
 import React from "react";
-import { connect, styled } from "frontity";
+import { Global, css, connect, styled } from "frontity";
+import BootstrapCss from "../styles/bootstrap.css";
 import Link from "../link";
 import Nav from "./nav";
 import MobileMenu from "./menu";
@@ -9,14 +10,15 @@ import TextLogo from "../../assets/gm_text_logo.png";
 const Header = ({ state }) => {
   return (
     <>
+      <Global styles={css(BootstrapCss)} />
       <BrandContainer>
         <StyledLink link="/">
           <TextLogoContainer src={TextLogo} />
           {/* <Title><span>F12</span> by awsm</Title> */}
         </StyledLink>
-        <MobileMenu gmLogo={Logo}/>
+        <MobileMenu gmLogo={Logo} />
       </BrandContainer>
-      <Nav gmLogo={Logo}/>
+      <Nav gmLogo={Logo} />
     </>
   );
 };

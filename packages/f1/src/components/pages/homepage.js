@@ -7,10 +7,14 @@ import QuoteSection from "./homepage/quote-section";
 import GridSection from "./homepage/grid-section";
 import FacetsSection from "./homepage/facets-section";
 import FooterSection from "./homepage/footer-section";
+import SlideshowSection from "./homepage/slideshow-section";
 
 const Homepage = ({ state, actions, libraries }) => {
   // Get information about the current URL.
   const indexData = state.source.get("/category/index");
+  const featuredData = state.source.get(
+    "/category/property-listings/featured/"
+  );
   // Get the data of the post.
   // const page = state.source[data.type][data.id];
 
@@ -24,6 +28,7 @@ const Homepage = ({ state, actions, libraries }) => {
    */
   useEffect(() => {
     actions.source.fetch("/category/index");
+    actions.source.fetch("/category/property-listings/featured/");
     List.preload();
   }, []);
 
@@ -47,6 +52,14 @@ const Homepage = ({ state, actions, libraries }) => {
           </Container>
           <GridSection dataRetriever={dataRetriever} />
           <FacetsSection dataRetriever={dataRetriever} />
+          {featuredData.isReady && (
+            <React.Fragment>
+              <SlideshowSection
+                dataRetriever={dataRetriever}
+                featuredData={featuredData}
+              />
+            </React.Fragment>
+          )}
           <FooterSection dataRetriever={dataRetriever} />
         </React.Fragment>
       )}

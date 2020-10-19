@@ -7,7 +7,6 @@ const List = ({ state }) => {
   // Get the data of the current list.
   const data = state.source.get(state.router.link);
   const data2 = state.source.get("/category/index");
-  console.log(data2, "fdasfsd");
   let title = 'Blog';
   if ( data.isAwsmJobOpeningsArchive ) {
     title = 'Career';
@@ -15,7 +14,6 @@ const List = ({ state }) => {
 
   return (
     <Container>
-      fadsfsdfdsfdfsafds
       {/* If the list is a blog posts, we render a title. */}
       {data.isPostArchive && (
         <Header>

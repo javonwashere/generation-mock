@@ -32,8 +32,8 @@ const LogoContainer = styled.img`
 
 const MenuToggle = styled.button`
   position: absolute;
-  right: 24px;
-  top: 40px;
+  right: 2vw;
+  top: 1vh;
   background: transparent;
   border: 0;
   color: var(--white);

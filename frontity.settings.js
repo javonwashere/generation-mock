@@ -16,11 +16,11 @@ const settings = {
         "theme": {
           "menu": [
             [
-              "Listings",
+              "LISTINGS",
               "/category/property-listings"
             ],
             [
-              "Blog",
+              "BLOG",
               "/category/blog"
             ],
             // [

@@ -1,0 +1,191 @@
+.about-title {
+    font-size: 6vw;
+}
+
+.video-container {
+    height: max-content;
+    width: auto;
+}
+
+.video-body {
+    width: 100%;
+    padding: 4vh 0;
+}
+
+.about-capabilities-wrapper {
+    margin: 7vh 0;
+}
+
+.about-capabilities-ul {
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 0px;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.about-capabilities-li {
+    list-style: none;
+    flex: 0 0 33.333333%;
+    font-size: 2vw;
+}
+
+.about-person-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-person-contents {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-person-name-container {
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    padding-top: 5em;
+}
+
+.about-person-name {
+    margin: 0;
+    font-size: 5vw;
+}
+
+.about-person-bio {
+    margin: 10px 0;
+    padding-bottom: 2em;
+}
+
+.about-person-title {
+    text-transform: uppercase;
+}
+
+.about-person-title h4 {
+    margin-top: 0;
+}
+
+.about-person-insta, .about-person-website {
+    font-family: "Untitled Sans", serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 2vh;
+}
+
+.about-person-website a, .about-person-insta a {
+    text-decoration: none;
+}
+
+.about-person-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 2em;
+    padding-right: 1em;
+    width: 45%;
+}
+
+.about-person-right {
+    margin-left: 2em;
+    width: 55%;
+}
+
+.about-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.about-people-container {
+    overflow: initial;
+}
+
+.arrow {
+    max-width: 2rem;
+    padding: 0.5rem;
+    margin-top: 1vh;
+}
+
+
+hr {
+    margin: 50px 0px;
+}
+
+
+/* end default values */
+
+
+
+@media screen and (min-width: 320px) and (max-width: 720px){
+    .about-title {
+        font-size: 8vw;
+    }
+    .about-capabilities-li {
+        font-size: 3vw;
+    }
+
+    .about-person-contents {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about-person-left {
+        width: 100%;
+     }
+
+     .about-person-name {
+        font-size: 6vw;
+    }
+     /* default values */
+.about-description {
+    padding-right: 2vw;
+    font-size: 3.3vw;
+}
+.about-person-contents {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.about-person-left {
+   width: 100%;
+   flex-direction: column-reverse;
+}
+.about-person-right {
+    margin-left: 0em;
+    width: 100%;
+}
+.about-person-name-container {
+    display: flex;  
+    writing-mode: initial;
+    transform: rotate(0deg);
+    padding-top: 1em;
+    flex-wrap: wrap;
+}
+.about-person-name {
+    margin-right: 2vw;
+}
+
+.about-person-insta, .about-person-website {
+    
+    font-size: 3vw;
+}
+}
+
+@media screen and (max-width: 720px) {
+    
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+
+}
+
+@media screen and (min-width: 1921px) {
+
+}
+
