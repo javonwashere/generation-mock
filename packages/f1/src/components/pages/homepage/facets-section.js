@@ -46,15 +46,15 @@ display: flex
 flex-direction: column;
 
 p {
-    margin: 0 auto;
+  margin: 0 auto;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  padding: 10px;
-  background: rgba(222, 111, 58);
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  background: rgba(222,111,58);
   color: white;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 
 h1, h2 {
@@ -62,21 +62,27 @@ h1, h2 {
   line-height: 1;
   font-size: 2rem;
   text-align: center;
+  margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 
 `;
 
 let BulletNum = styled.div`
-  margin: 0 auto;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  padding: 10px;
-  background: rgba(222, 111, 58);
-  color: white;
-  text-align: center;
-  font-size: 0.8rem;
+margin: 0 auto;
+border-radius: 50%;
+width: 30px;
+height: 30px;
+padding: 2px;
+background: rgba(222,111,58);
+color: white;
+text-align: center;
+font-size: 1.2rem;
+font-weight: bold;
 `;
 
 const Container = styled.div`
