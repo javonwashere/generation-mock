@@ -100,6 +100,9 @@ const Container = styled.div`
 const TitleWrapper = styled.div`
   padding: 4vh 0;
   border-bottom: solid 1px rgba(113, 119, 104);
+  h2 {
+    margin-top: .5rem;
+  }
 `;
 
 const Title = styled.h2`

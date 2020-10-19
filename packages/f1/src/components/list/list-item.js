@@ -193,6 +193,8 @@ const Title = styled.h1`
   color: var(--black);
   box-sizing: border-box;
   transition: all .3s ease;
+  font-family: 'GTSectraDisplay';
+  letter-spacing: .05rem;
 `;
 
 const AuthorName = styled.span`
