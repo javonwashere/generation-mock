@@ -94,7 +94,7 @@ let TextWrapper = styled.div`
 `;
 
 let Arrow = styled.div`
-  width: 20px;
+  width: 40px;
   padding: 0.5rem;
   margin-top: 1vh;
 `;
