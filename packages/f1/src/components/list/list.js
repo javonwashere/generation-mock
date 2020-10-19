@@ -29,7 +29,7 @@ const List = ({ state }) => {
       {/* If the list is a taxonomy, we render a title. */}
       {data.isTaxonomy && (
         <Header>
-          {data.taxonomy}:{" "}
+          {/* {data.taxonomy}:{" "} */}
           <b>{decode(state.source[data.taxonomy][data.id].name)}</b>
         </Header>
       )}
@@ -83,6 +83,10 @@ const Container = styled.section`
 
 const Header = styled.h1`
   text-align:center;
-  margin-bottom:3rem;
-
+  margin-top:1rem;
+  margin-bottom:2rem;
+  font-size: 1rem;
+  font-family: 'GTSectraDisplay';
+  color: var(--brand);
+  letter-spacing: .05rem;
 `;
