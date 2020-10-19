@@ -78,6 +78,9 @@ const ArticleContainer = styled.div`
 
 const Title = styled.h1`
   margin-bottom: 1.2rem;
+  font-family: 'GTSectraDisplay';
+  color: var(--brand);
+  letter-spacing: .05rem;
 `;
 
 const StyledLink = styled(Link)`
