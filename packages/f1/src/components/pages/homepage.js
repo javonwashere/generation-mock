@@ -6,6 +6,7 @@ import HeroSection from "./homepage/hero-section";
 import QuoteSection from "./homepage/quote-section";
 import GridSection from "./homepage/grid-section";
 import FacetsSection from "./homepage/facets-section";
+import FooterSection from "./homepage/footer-section";
 
 const Homepage = ({ state, actions, libraries }) => {
   // Get information about the current URL.
@@ -45,7 +46,8 @@ const Homepage = ({ state, actions, libraries }) => {
             <QuoteSection dataRetriever={dataRetriever} />
           </Container>
           <GridSection dataRetriever={dataRetriever} />
-            <FacetsSection dataRetriever={dataRetriever} />
+          <FacetsSection dataRetriever={dataRetriever} />
+          <FooterSection dataRetriever={dataRetriever} />
         </React.Fragment>
       )}
     </HomeContainer>

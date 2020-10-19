@@ -2,19 +2,19 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.2",
-  "hash": "2f96f5e62418df063b77",
+  "hash": "f5a458ae6cc8ae429c27",
   "publicPath": "/static/",
   "outputPath": "/Users/javonmcgilberry/Documents/gen-mock-v2/generation-mock/build/static",
   "assetsByChunkName": {
     "gen-mock": [
       "gen-mock.module.js",
-      "gen-mock.53c43aecc8995ee22024.hot-update.js"
+      "gen-mock.c89766fed5d23f976213.hot-update.js"
     ],
     "list": "list.module.js"
   },
   "assets": [
     {
-      "name": "53c43aecc8995ee22024.hot-update.json",
+      "name": "c89766fed5d23f976213.hot-update.json",
       "size": 50,
       "chunks": [],
       "chunkNames": [],
@@ -121,8 +121,8 @@
       "emitted": false
     },
     {
-      "name": "gen-mock.53c43aecc8995ee22024.hot-update.js",
-      "size": 71616,
+      "name": "gen-mock.c89766fed5d23f976213.hot-update.js",
+      "size": 19222,
       "chunks": [
         "gen-mock"
       ],
@@ -137,13 +137,21 @@
     },
     {
       "name": "gen-mock.module.js",
-      "size": 6587196,
+      "size": 7107919,
       "chunks": [
         "gen-mock"
       ],
       "chunkNames": [
         "gen-mock"
       ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/facebook.png",
+      "size": 13517,
+      "chunks": [],
+      "chunkNames": [],
       "info": {},
       "emitted": false
     },
@@ -158,6 +166,30 @@
     {
       "name": "images/gm_text_logo.png",
       "size": 12670,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/insta.png",
+      "size": 36948,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/linkedin.png",
+      "size": 21043,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/logo-white.png",
+      "size": 29020,
       "chunks": [],
       "chunkNames": [],
       "info": {},
@@ -208,7 +240,7 @@
       ],
       "assets": [
         "gen-mock.module.js",
-        "gen-mock.53c43aecc8995ee22024.hot-update.js"
+        "gen-mock.c89766fed5d23f976213.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -221,7 +253,7 @@
       ],
       "assets": [
         "gen-mock.module.js",
-        "gen-mock.53c43aecc8995ee22024.hot-update.js"
+        "gen-mock.c89766fed5d23f976213.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

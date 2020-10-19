@@ -7,7 +7,7 @@ let facets = [
   `Rental Properties`,
 ];
 
-const FacetsSection = ({ title, text, state, dataRetriever, libraries }) => {
+const FacetsSection = ({ state, dataRetriever, libraries }) => {
   const Html2React = libraries.html2react.Component;
   const indexData = state.source.get("/category/index");
   const posts = indexData.items.map(({ type, id }) => state.source[type][id]);

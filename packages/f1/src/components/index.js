@@ -16,6 +16,7 @@ import PageError from "./page-error";
 import BootstrapCss from "./styles/bootstrap.css";
 import gutenbergStyle from "./styles/gutenberg/style.css";
 import gutenbergTheme from "./styles/gutenberg/theme.css";
+import coblocksCss from "./coblocks";
 
 /**
  * Theme is the root React component of our theme. The one we will export
@@ -41,6 +42,7 @@ const Theme = ({ state }) => {
       <Global styles={css(gutenbergStyle)} />
       <Global styles={css(gutenbergTheme)} />
       <Global styles={globalStyles} />
+      <Global styles={coblocksCss} />
 
       {/* Add the header of the site. */}
       <HeadContainer>
