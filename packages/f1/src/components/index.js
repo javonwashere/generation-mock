@@ -14,9 +14,9 @@ import Loading from "./loading";
 import Title from "./title";
 import PageError from "./page-error";
 import BootstrapCss from "./styles/bootstrap.css";
+import coblocks from "./styles/coblocks.css";
 import gutenbergStyle from "./styles/gutenberg/style.css";
 import gutenbergTheme from "./styles/gutenberg/theme.css";
-import coblocksCss from "./coblocks";
 
 /**
  * Theme is the root React component of our theme. The one we will export
@@ -38,11 +38,11 @@ const Theme = ({ state }) => {
 
       {/* Add some global styles for the whole site, like body or a's. 
       Not classes here because we use CSS-in-JS. Only global HTML tags. */}
-      {/* <Global styles={css(BootstrapCss)} /> */}
+      <Global styles={css(BootstrapCss)} />
+      <Global styles={css(coblocks)} />
       <Global styles={css(gutenbergStyle)} />
       <Global styles={css(gutenbergTheme)} />
       <Global styles={globalStyles} />
-      <Global styles={coblocksCss} />
 
       {/* Add the header of the site. */}
       <HeadContainer>
@@ -62,9 +62,7 @@ const Theme = ({ state }) => {
           <PageError when={data.isError} />
         </Switch>
       </Main>
-      <FooterContainer>
-        {/* <Footer /> */}
-      </FooterContainer>
+      <FooterContainer>{/* <Footer /> */}</FooterContainer>
     </>
   );
 };
@@ -78,9 +76,11 @@ const globalStyles = css`
     --white: #ffffff;
     --bodycolor: #343434;
   }
+
   html {
     animation: zoomInDown ease 1.5s;
   }
+  
   body {
     margin: 0;
     color: var(--bodycolor);
