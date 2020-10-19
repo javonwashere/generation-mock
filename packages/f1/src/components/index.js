@@ -13,7 +13,7 @@ import Jobs from "./pages/jobs";
 import Loading from "./loading";
 import Title from "./title";
 import PageError from "./page-error";
-import BootstrapCss from './styles/bootstrap.css';
+import BootstrapCss from "./styles/bootstrap.css";
 import gutenbergStyle from "./styles/gutenberg/style.css";
 import gutenbergTheme from "./styles/gutenberg/theme.css";
 
@@ -37,10 +37,10 @@ const Theme = ({ state }) => {
 
       {/* Add some global styles for the whole site, like body or a's. 
       Not classes here because we use CSS-in-JS. Only global HTML tags. */}
-      <Global styles={css(BootstrapCss)} />
+      <Global styles={globalStyles} />
+      {/* <Global styles={css(BootstrapCss)} /> */}
       <Global styles={css(gutenbergStyle)} />
       <Global styles={css(gutenbergTheme)} />
-      <Global styles={globalStyles} />
 
       {/* Add the header of the site. */}
       <HeadContainer>
@@ -61,8 +61,8 @@ const Theme = ({ state }) => {
         </Switch>
       </Main>
       <FooterContainer>
-        <Footer/>
-      </FooterContainer>      
+        <Footer />
+      </FooterContainer>
     </>
   );
 };
@@ -71,14 +71,14 @@ export default connect(Theme);
 
 const globalStyles = css`
   :root {
-    --brand: rgba(222,111,58);;
+    --brand: rgba(222, 111, 58);
     --black: #000000;
     --white: #ffffff;
     --bodycolor: #343434;
   }
   body {
     margin: 0;
-    color:var(--bodycolor);
+    color: var(--bodycolor);
     // font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     //   "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-family: "NeueHaasGroteskText Rg", Helvetica, Arial, sans-serif;
@@ -86,33 +86,38 @@ const globalStyles = css`
     -webkit-font-smoothing: antialiased;
   }
   a,
-  a:visited {  
+  a:visited {
     text-decoration: none;
     &:hover {
       text-decoration: none;
     }
   }
-  h1, h2, h3, h4, h5, h6 {
-    color:var(--black);
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--black);
   }
   p {
-    line-height:24px;
-    font-size:18px;
+    line-height: 24px;
+    font-size: 18px;
   }
   #root {
-    display:flex;
+    display: flex;
     flex-direction: column;
     height: 100vh;
   }
   .container {
     max-width: 1200px;
-    width:100%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     padding-right: 15px;
     padding-left: 15px;
   }
-  .section{
+  .section {
     padding: 34px 0;
     @media (min-width: 992px) {
       padding: 50px 0;
@@ -184,25 +189,25 @@ const globalStyles = css`
 
   @media (min-width: 320px) {
     html {
-      font-size: 14px;
+      font-size: 14px !important;
     }
   }
 
   @media (min-width: 640px) {
     html {
-      font-size: 16px;
+      font-size: 16px !important;
     }
   }
 
   @media (min-width: 768px) {
     html {
-      font-size: 16px;
+      font-size: 16px !important;
     }
   }
 
   @media (min-width: 1024px) {
     html {
-      font-size: 16px;
+      font-size: 16px !important;
     }
   }
 
@@ -232,19 +237,19 @@ const globalStyles = css`
 
 const HeadContainer = styled.div`
   display: flex;
-  width:100%;
-  max-width:1200px;
+  width: 100%;
+  max-width: 1200px;
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 2.75rem;
   padding-right: 15px;
   padding-left: 15px;
-  padding-bottom:6.25rem;
+  padding-bottom: 6.25rem;
 `;
 const FooterContainer = styled.div`
   display: flex;
-  width:100%;
-  background:var(--brand);
+  width: 100%;
+  background: var(--brand);
   // margin-top: auto;
 `;
 
