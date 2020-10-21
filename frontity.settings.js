@@ -7,7 +7,8 @@ const settings = {
       "url": "https://test.frontity.org",
       "title": "Generation Mock",
       "description": "Generation Mock"
-    }
+    },
+    "adminUrl": "https://wp.generationmock.com/wp-admin/"
   },
   "packages": [
     {
@@ -15,14 +16,14 @@ const settings = {
       "state": {
         "theme": {
           "menu": [
-            [
-              "LISTINGS",
-              "/category/property-listings"
-            ],
-            [
-              "BLOG",
-              "/category/blog"
-            ],
+            // [
+            //   "LISTINGS",
+            //   "/category/property-listings"
+            // ],
+            // [
+            //   "BLOG",
+            //   "/category/blog"
+            // ],
             // [
             //   "Home",
             //   "/"

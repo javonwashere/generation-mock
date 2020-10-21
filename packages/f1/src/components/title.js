@@ -36,10 +36,13 @@ const Title = ({ state }) => {
   } else if (data.isAwsmJobOpeningsArchive) {
     // Add titles to 404's.
     title = `Career - ${state.frontity.title}`;
+  } else if (data.isLoggingIn) {
+    title = `Welcome Admin`;
   } else if (data.is404) {
     // Add titles to 404's.
     title = `404 Not Found - ${state.frontity.title}`;
   }
+  
 
   return (
     <Head>

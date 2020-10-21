@@ -52,14 +52,14 @@ const Homepage = ({ state, actions, libraries }) => {
           </Container>
           <GridSection dataRetriever={dataRetriever} />
           <FacetsSection dataRetriever={dataRetriever} />
-          {featuredData.isReady && (
+          {/* {featuredData.isReady && (
             <React.Fragment>
               <SlideshowSection
                 dataRetriever={dataRetriever}
                 featuredData={featuredData}
               />
             </React.Fragment>
-          )}
+          )} */}
           <FooterSection dataRetriever={dataRetriever} />
         </React.Fragment>
       )}

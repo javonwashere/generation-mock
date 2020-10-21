@@ -13,6 +13,7 @@ import Jobs from "./pages/jobs";
 import Loading from "./loading";
 import Title from "./title";
 import PageError from "./page-error";
+import LoggingIn from "./logging-in";
 import BootstrapCss from "./styles/bootstrap.css";
 import coblocks from "./styles/coblocks.css";
 import gutenbergStyle from "./styles/gutenberg/style.css";
@@ -23,8 +24,13 @@ import gutenbergTheme from "./styles/gutenberg/theme.css";
  * in roots.
  */
 const Theme = ({ state }) => {
+  let link = state.router.link;
+  let isLoggingIn = link === "/admin/";
+  console.log("state.router", link);
   // Get information about the current URL.
-  const data = state.source.get(state.router.link);
+  const data = state.source.get(link);
+
+  data.isLoggingIn = isLoggingIn;
 
   return (
     <>
@@ -59,6 +65,7 @@ const Theme = ({ state }) => {
           <Jobs when={data.isAwsmJobOpenings} />
           <Page when={data.isPage} />
           <Post when={data.isPostType} />
+          <LoggingIn when={isLoggingIn} />
           <PageError when={data.isError} />
         </Switch>
       </Main>
@@ -194,13 +201,13 @@ const globalStyles = css`
 
   @media (min-width: 320px) {
     html {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 
   @media (min-width: 640px) {
     html {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 
@@ -212,13 +219,19 @@ const globalStyles = css`
 
   @media (min-width: 1024px) {
     html {
-      font-size: 16px;
+      font-size: 17px;
     }
   }
 
   @media (min-width: 1280px) {
     html {
-      font-size: 16px;
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    html {
+      font-size: 2vw;
     }
   }
 

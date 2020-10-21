@@ -22,14 +22,6 @@ const FeaturedMediaPanel = ({ state, details, libraries, isBottom }) => {
       ) || null;
 
   return (
-    // <FeaturedContainer>
-    //   <StyledImage
-    //     alt={media.title.rendered}
-    //     src={media.source_url}
-    //     srcSet={srcset}
-    //   />
-    // </FeaturedContainer>
-
     <PanelWrapper isBottom={isBottom} url={media.source_url}>
       <PanelImgCaption isBottom={isBottom}>
         <Html2React html={details.content.rendered} />
@@ -107,7 +99,7 @@ const PanelWrapper = styled.div`
   &:before {
     ${(props) =>
       props.isBottom ? `bottom: 10px; left: 10px;` : `top: 10px; left: 10px;`}
-    content: "?";
+    // content: "?";
     position: absolute;
     font-weight: 800;
     background: black;

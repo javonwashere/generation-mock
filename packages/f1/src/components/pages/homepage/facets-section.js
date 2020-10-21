@@ -48,13 +48,14 @@ flex-direction: column;
 p {
   margin: 0 auto;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  padding: 2px;
+  width: 4vw;
+  height: 4vw;
+  padding: .5vw;
   background: rgba(222,111,58);
   color: white;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 2vw;
+  font-weight: 900;
 }
 
 h1, h2 {
@@ -109,6 +110,7 @@ const Title = styled.h2`
   text-align: center;
   color: rgba(222, 111, 58);
   font-family: "NeueHaasGroteskText Bd";
+  font-size: 1.4rem;
 `;
 
 const PanelText = styled.div`

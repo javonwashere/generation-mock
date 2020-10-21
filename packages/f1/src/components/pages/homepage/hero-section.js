@@ -49,42 +49,44 @@ const HeroSection = ({ state, actions, panels, libraries }) => {
   };
 
   // if (indexData.isReady) {
-    const posts = indexData.items.map(({ type, id }) => state.source[type][id]);
-    let retrieveData = dataRetriever(posts);
+  const posts = indexData.items.map(({ type, id }) => state.source[type][id]);
+  let retrieveData = dataRetriever(posts);
 
-    console.log("ALL POSTS", posts);
+  console.log("ALL POSTS", posts);
 
-    const panel1 = retrieveData("HeroText");
-    const panel2 = retrieveData("HeroImage1");
-    const panel3 = retrieveData("HeroImage2");
+  const panel1 = retrieveData("HeroText");
+  const panel2 = retrieveData("HeroImage1");
+  const panel3 = retrieveData("HeroImage2");
 
-    const allPanels = { panel1, panel2, panel3 };
-    return (
-      <Panels>
-        <PanelStyling1>
-          <TextContainer>
+  const allPanels = { panel1, panel2, panel3 };
+  return (
+    <Panels>
+      <PanelStyling1>
+        <TextContainer>
+          <TextWrap>
             <Html2React html={allPanels.panel1.content.rendered} />
-            <ScrollLink to="quote-section" smooth={true} duration={500}>
-              <p
-                style={{
-                  textDecoration: "underline",
-                  fontWeight: "bold",
-                  fontSize: "1rem",
-                }}
-              >
-                {`scroll down`.toUpperCase()}
-              </p>
-            </ScrollLink>
-          </TextContainer>
-        </PanelStyling1>
-        <PanelStyling>
-          <FeaturedMediaPanel details={panel2} isBottom={false} />
-        </PanelStyling>
-        <PanelStyling>
-          <FeaturedMediaPanel details={panel3} isBottom={true} />
-        </PanelStyling>
-      </Panels>
-    );
+          </TextWrap>
+          <ScrollLink to="quote-section" smooth={true} duration={500}>
+            <p
+              style={{
+                textDecoration: "underline",
+                fontWeight: "bold",
+                fontSize: "1rem",
+              }}
+            >
+              {`scroll down`.toUpperCase()}
+            </p>
+          </ScrollLink>
+        </TextContainer>
+      </PanelStyling1>
+      <PanelStyling>
+        <FeaturedMediaPanel details={panel2} isBottom={false} />
+      </PanelStyling>
+      <PanelStyling>
+        <FeaturedMediaPanel details={panel3} isBottom={true} />
+      </PanelStyling>
+    </Panels>
+  );
   // }
   // return null;
 };
@@ -156,6 +158,15 @@ const Img = ({ details, isBottomPanel }) => {
   );
 };
 
+const TextWrap = styled.div`
+  p {
+    &:first-of-type {
+      font-weight: 500;
+      letter-spacing: 0.3vw;
+    }
+  }
+`;
+
 const PanelImgCaption = styled.div`
   position: absolute;
   background: black;
@@ -209,7 +220,7 @@ const PanelWrapper = styled.div`
   &:before {
     ${(props) =>
       props.isBottom ? `bottom: 10px; left: 10px;` : `top: 10px; left: 10px;`}
-    content: "?";
+    // content: "?";
     position: absolute;
     font-weight: 800;
     background: black;
