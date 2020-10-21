@@ -38,7 +38,7 @@ const MenuToggle = styled.button`
   border: 0;
   color: var(--white);
   z-index: 5;
-  width: 40px;
+  height: 20px;
   display: none;
   outline:0;
   transition: all 0.3s ease;
