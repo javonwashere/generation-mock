@@ -6,7 +6,7 @@ const settings = {
     "frontity": {
       "url": "https://test.frontity.org",
       "title": "Generation Mock",
-      "description": "WordPress installation for Frontity development"
+      "description": "Generation Mock"
     }
   },
   "packages": [
@@ -55,7 +55,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "api": "https://generationmock.com/wp-json"
+          "api": "https://wp.generationmock.com/wp-json"
         }
       }
     },
