@@ -46,15 +46,15 @@ display: flex
 flex-direction: column;
 
 p {
-  margin: 0 auto;
+  margin: 0px auto;
   border-radius: 50%;
-  width: 4vw;
-  height: 4vw;
-  padding: .5vw;
-  background: rgba(222,111,58);
+  width: 2vw;
+  height: 2vw;
+  padding: 0.1vw;
+  background: rgb(222, 111, 58);
   color: white;
   text-align: center;
-  font-size: 2vw;
+  font-size: 1vw;
   font-weight: 900;
 }
 
